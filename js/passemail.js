@@ -3,7 +3,7 @@ function passEmail(){
 	var xusuario = $("#usuario").val();
 	
 	if(document.form2.usuario.value.length == ""){
-		alert("Escriba su correo eléctronico y presione He olvidado mi contraseña");
+		alert("Escriba su correo eléctronico y presione nuevamente He olvidado mi contraseña");
 		document.form2.usuario.focus();
 		return false;
 		

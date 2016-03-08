@@ -78,6 +78,7 @@ function listafavorito() {
                                   '<br>'+
 								  'Fecha: '+item.fecha+'</p>'+
 								  '<p>'+ item.texto + '</p>' +
+								  '<p><strong>'+item.nombre+'</strong></p>'+
 								  '<br>'+
                                   '<a href="" onclick="descargarArchivo(\''+item.enlace+'\')" >'+item.enlace+'</a>'+
 								  '<br>'+
