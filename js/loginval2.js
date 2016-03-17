@@ -51,13 +51,13 @@ function loginVal2(){
 				
 				
 			});
-			init();
-			comprobarid();
+			
+			
 			}
 		},
 
 });
-
+setTimeout('comprobarid()',8000);
 }
 
 function comprobarid(){
@@ -65,7 +65,7 @@ function comprobarid(){
 	var xregid = $("#regId").val();
 	var xnumero = localStorage.numero;
 	
-	
+	if ((xregid != "") && (xnumero != "")){
 	$.ajax({
 		url: 'http://appcoplp.micolegioapp.com/php/comprobarid.php',
 		dataType: 'jsonp',
@@ -76,5 +76,5 @@ function comprobarid(){
 		
 			});
 	
-	
+	}
 	}

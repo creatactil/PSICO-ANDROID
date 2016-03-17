@@ -37,7 +37,7 @@ function crearLista() {
 				//color:#BCBCBC;
 				}else{	
 				var tema = "#A4A4A4";
-				var listo = "#lista1";}
+				var listo = "#lista";}
 									
 			$(listo).append(			
 		

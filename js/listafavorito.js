@@ -118,9 +118,6 @@ function listafavorito() {
 			globo();
     } 
 	 
-
-
-
  
 function changePage(id) {
 		$.mobile.changePage($(id), {transition : "slide"});

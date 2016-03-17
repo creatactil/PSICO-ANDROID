@@ -11,7 +11,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 
-<link rel="stylesheet" href="css/estilo.css" />
+<link rel="stylesheet" href="css/estilo.css"/>
 <link rel="stylesheet" href="themes/temacop.min.css" />
 <link rel="stylesheet" href="jqm145/jquery.mobile.structure-1.4.5.min.css"/>
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
@@ -58,7 +58,68 @@
 	color:#FFF;
 	text-shadow: 0  0px  0  #f3f3f3
 	}
-	
+/*ordenador zoom bajo*/
+
+@media only screen
+and (max-width: 1440px){
+	#imgportada {
+  background-image:url(imgportada/4.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+  height: 100%;  
+  width: 100%;  
+  
+}
+}
+
+/*tablet horizontal*/
+@media only screen
+and (max-width: 1300px){
+	#imgportada {
+  background-image:url(imgportada/3.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+  height: 100%;  
+  width: 100%;  
+  
+}
+}
+
+/*tablet vertical*/
+@media only screen
+and (max-width: 992px) {
+	#imgportada {
+  background-image:url(imgportada/2.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+  height: 100%;  
+  width: 100%;  
+  
+}
+}
+/*movil*/
+@media only screen 
+and (max-width: 768px){
+	#imgportada {
+  background-image:url(imgportada/1.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+  background-size:contain;  
+  width: 100%;  
+  
+}
+}
+@media only screen 
+and (max-width: 450px){
+	#imgportada {
+  background-image:url(imgportada/0.jpg);
+  background-repeat:no-repeat;
+  background-position:top;
+  background-size:contain; 
+  width: 100%;  
+  
+}
+}	
 
 </style>
 <script src="js/borrafavorito.js"></script>
@@ -158,9 +219,12 @@ App Diseñada por creaTáctil S.L.
      <a href="" data-role="button" class="ui-btn-right" data-mini="true" data-icon="power" onClick="desconectar()" data-iconpos="notext"></a>   
     </div>
     
-    <div data-role="main" class="ui-content" style="margin:0; padding:0; position:fixed; width:100%">
-    <img src="imgportada/portada.jpg" height="0%" width="100%">
+    <div  id="imgportada"  data-role="main" class="ui-content" style="margin:0; padding:0; position:fixed; width:100%">
+    <!--<img id="" src="imgportada/0.jpg" height="0%" width="100%"> -->
     </div>
+    <!--<div data-role="main" class="ui-content" style="margin:0; padding:0; position:fixed; width:100%">
+    <img src="imgportada/portada.jpg" height="0%" width="100%">
+    </div>-->
     
     <!--footer-->  
     <div data-role="footer" data-theme="a" data-position="fixed" >
@@ -273,17 +337,15 @@ App Diseñada por creaTáctil S.L.
 	<!--<a href="#page1" data-role="button" data-icon="home" onClick="inicio()">Inicio</a> -->
     </div> 
 	
-	 <div data-role="content" id="contenido">
+	 <div data-role="content" id="contenido" style="margin-top:-15px">
 		
 		   <!-- Aqui se añade el listado de mensajes -->
 		  <ul data-role="listview"  id="lista"  data-inset="true"  >
 		  
           </ul>
-          
-           <ul data-role="listview"  id="lista1"  data-inset="true" >
-		  </ul>
+                   
 	 		<center><div id="carga23"><img src="imagenes/cargando.gif" style="margin-top:10%"></div></center>
-       <br><br><br><br><br><br><br><br>
+       
 </div> 
         
         
@@ -507,16 +569,14 @@ La finalidad de la cesión es actualizar la base de datos del Colegio Oficial de
 	
     </div> 
 	
-	 <div data-role="content" id="contenido14">
+	 <div data-role="content" id="contenido14" style="margin-top:-15px">
 			
 		   <!-- Aqui se añade el listado de mensajes -->
-		  <ul data-role="listview"  id="listafav"  data-inset="true">
-		  </ul>
-          
+		           
            <ul data-role="listview"  id="listafav1"  data-inset="true" >
 		  </ul>
 	 		<center><div id="carga14"><img src="imagenes/cargando.gif" style="margin-top:10%"></div></center>
-    		<br><br><br><br><br><br><br><br>
+    		
 </div> 
      
     <!--Pie de pagina -->
